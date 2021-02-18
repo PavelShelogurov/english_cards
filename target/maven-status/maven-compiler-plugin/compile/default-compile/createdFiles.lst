@@ -1,0 +1,5 @@
+servlets\HandlerForm.class
+servlets\JspFromJavaClass.class
+model\CardStore.class
+model\WordCard.class
+servlets\WorkersList.class

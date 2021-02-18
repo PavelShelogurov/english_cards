@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+
+    <servlet>
+        <servlet-name>HandlerForm</servlet-name>
+        <servlet-class>servlets.HandlerForm</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HandlerForm</servlet-name>
+        <url-pattern>/handlerForm</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>WorkerList</servlet-name>
+        <servlet-class>servlets.WorkersList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WorkerList</servlet-name>
+        <url-pattern>/worker-list</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/static/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>jsp-servlet</servlet-name>
+        <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>jsp-servlet</servlet-name>
+        <url-pattern>*.jsp</url-pattern>
+    </servlet-mapping>
+</web-app>
